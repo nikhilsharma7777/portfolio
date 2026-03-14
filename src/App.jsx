@@ -314,13 +314,14 @@ const SKILLS = [
 const PROJECTS = [
   { title:"Telecom App Monitoring on Linux", desc:"Automation and monitoring in a Linux production environment. Log analysis, performance monitoring, server troubleshooting, and application availability support.", tags:["Linux","Shell Script","Log Analysis","Monitoring","Grafana"], link:null },
   { title:"E-Commerce Web Application",      desc:"Fully responsive e-commerce app built with React and Vite. Product listings, cart management, and clean UI. Deployed live on Vercel.",                    tags:["React","Vite","JavaScript","Node.js"],           link:"https://shopvault-alpha.vercel.app" },
-  { title:"Personal Portfolio Website",      desc:"Designed and built from scratch with React and Vite. Animations, skill bars, project showcase, experience timeline, and working contact form.",            tags:["React","Vite","JavaScript","CSS"],               link:null },
   { title:"Gas Network GIS Project",         desc:"Manage and optimize gas network infrastructure across the US using ArcGIS Pro to map pipelines, distribution systems, and related assets.",                tags:["ArcGIS Pro","GIS","MySQL","Excel"],              link:null },
+  { title:"Personal Portfolio Website",      desc:"Designed and built from scratch with React and Vite. Animations, skill bars, project showcase, experience timeline, and working contact form.",            tags:["React","Vite","JavaScript","CSS"],               link:null },
 ];
 const EXPERIENCE = [
-  { period:"2024 Feb – Present",   role:"Linux Engineer",                     company:"Mannash Solutions Pvt Ltd, India",                  desc:"Monitoring Linux servers in a telecom production environment. Analyzing logs with grep, awk, and shell scripts. Ensuring system stability and availability." },
-  { period:"2023 July – 2024 Jan", role:"GIS Technician",                     company:"UDC India Technologies, Himachal Pradesh",          desc:"Gas network GIS projects using ArcGIS Pro. Mapping spatial data for pipeline infrastructure. Quality checks and spatial analysis for network optimization." },
-  { period:"2024 – Present",       role:"Full-Stack Developer (Self-Learning)",company:"Personal Projects, Remote",                         desc:"Building web apps with JavaScript, React, Node.js, and MySQL. Deployed e-commerce app on Vercel. Expanding through Udemy and hands-on projects." },
+  { period:"2025 Feb – Present",   role:"Linux Engineer",                     company:"Mannash Solutions Pvt Ltd, India",                  desc:"Monitoring Linux servers in a telecom production environment. Analyzing logs with grep, awk, and shell scripts. Ensuring system stability and availability." },
+   { period:"2025 – Present",       role:"Full-Stack Developer (Self-Learning)",company:"Personal Projects, Remote",                         desc:"Building web apps with JavaScript, React, Node.js, and MySQL. Deployed e-commerce app on Vercel. Expanding through Udemy and hands-on projects." },
+  { period:"2024 July – 2025 Jan", role:"GIS Technician",                     company:"UDC India Technologies, Himachal Pradesh",          desc:"Gas network GIS projects using ArcGIS Pro. Mapping spatial data for pipeline infrastructure. Quality checks and spatial analysis for network optimization." },
+ 
 ];
 const MARQUEE = ["Linux","Bash","Shell Script","Grafana","Node.js","MySQL","React","JavaScript","ArcGIS","Monitoring","Vite","HTML5"];
 
