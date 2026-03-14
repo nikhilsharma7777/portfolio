@@ -446,7 +446,7 @@ export default function App() {
         <div className="s-label">Selected Work<span className="s-num">— 02</span></div>
         <div className="work-hd">
           <div className="work-hl">Projects.</div>
-          <div className="work-meta">{PROJECTS.length} projects<br/>2023 – 2025</div>
+          <div className="work-meta">{PROJECTS.length} projects<br/>2024 – 2026</div>
         </div>
         <div className="proj-list">
           {PROJECTS.map((p,i)=>(
