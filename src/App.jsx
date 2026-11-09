@@ -138,7 +138,6 @@ const EXPERIENCE = [
   },
 ];
 
-const FILTERS = ["All", "Development", "Linux", "Data & GIS"];
 
 function ArrowUpRight() {
   return <span aria-hidden="true" className="arrow">↗</span>;
@@ -339,13 +338,6 @@ const handleSubmit = async (event) => {
           <SectionHeading eyebrow="Selected work" title="Projects with purpose." number="03" />
           <div className="project-toolbar">
             <p>A selection of professional experience and hands-on work.</p>
-            <div className="filter-list" aria-label="Filter projects">
-              {FILTERS.map((item) => (
-                <button key={item} className={filter === item ? "filter active" : "filter"} onClick={() => setFilter(item)}>
-                  {item}
-                </button>
-              ))}
-            </div>
           </div>
           <div className="project-grid">
             {visibleProjects.map((project) => (
