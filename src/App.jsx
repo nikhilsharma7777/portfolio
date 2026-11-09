@@ -197,23 +197,28 @@ export default function App() {
     setMenuOpen(false);
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    // Reuses the EmailJS configuration from your previous portfolio.
-    const serviceId = "service_nwt81jo";
-    const templateId = "template_lu7o40l";
-    const publicKey = "C2C44A1wdsf8zeg0y";
+const handleSubmit = async (event) => {
+  event.preventDefault();
 
-    setFormState("sending");
-    try {
-      await emailjs.sendForm(serviceId, templateId, event.currentTarget, publicKey);
-      setFormState("success");
-      event.currentTarget.reset();
-    } catch (error) {
-      console.error("EmailJS submission failed:", error);
-      setFormState("error");
-    }
-  };
+  // Store the form before the asynchronous operation
+  const form = event.currentTarget;
+
+  const serviceId = "service_nwt81jo";
+  const templateId = "template_lu7o40l";
+  const publicKey = "C2C44A1wdsf8zeg0y";
+
+  setFormState("sending");
+
+  try {
+    await emailjs.sendForm(serviceId, templateId, form, publicKey);
+
+    setFormState("success");
+    form.reset();
+  } catch (error) {
+    console.error("EmailJS submission failed:", error);
+    setFormState("error");
+  }
+};
 
   const navItems = ["home", "about", "skills", "projects", "experience", "contact"];
 
